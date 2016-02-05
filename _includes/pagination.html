@@ -1,0 +1,12 @@
+<div class="pagination">
+    {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">← сюда</a>
+    {% else %}
+    <span class="pagination-item older">сюда</span>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">туда →</a>
+    {% else %}
+    <span class="pagination-item newer">туда</span>
+    {% endif %}
+</div>

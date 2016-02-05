@@ -1,0 +1,63 @@
+# Site settings
+title: Блогушка
+tagline: Fight for your dreams!
+about: Коротко о Ди
+email: ndilya@mail.ru
+description: >
+  Несколько слов о Ди
+
+# About/contact
+author:
+  name: Назарова Диля
+  email: ndilya@mail.ru
+  image: "/assets/img/di.jpg"
+  url:  http://melandi.github.io
+
+social:
+  vk: "http://vk.com/dilyanazarova"
+  instagram: "https://www.instagram.com/nazarova.di"
+  github: "https://github.com/melandi"
+
+baseurl: ""
+url: "http://melandi.github.io"
+timezone: Europe/Moscow
+
+# Conversion
+encoding: UTF-8
+markdown: kramdown
+markdown_ext: markdown,md
+
+# Outputting
+paginate: 4
+permalink: "/:categories/:title.html"
+relative_permalinks: true
+paginate_path: "/page/:num"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      categories: "post"
+
+gems:
+  - jemoji
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-redirect-from
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole
