@@ -1,4 +1,6 @@
 # Site settings
+version: 0.0.1
+
 title: Блогушка
 tagline: Fight for your dreams!
 about: Коротко о Ди
@@ -14,9 +16,14 @@ author:
   url:  http://melandi.github.io
 
 social:
-  vk: "http://vk.com/dilyanazarova"
-  instagram: "https://www.instagram.com/nazarova.di"
-  github: "https://github.com/melandi"
+  - icon: vk
+    url: http://vk.com/dilyanazarova
+
+  - icon: instagram
+    url: https://www.instagram.com/nazarova.di
+
+  - icon: github
+    url: https://github.com/melandi
 
 baseurl: ""
 url: "http://melandi.github.io"
@@ -30,7 +37,6 @@ markdown_ext: markdown,md
 # Outputting
 paginate: 4
 permalink: "/:categories/:title.html"
-relative_permalinks: true
 paginate_path: "/page/:num"
 
 defaults:
@@ -45,8 +51,10 @@ defaults:
 
 gems:
   - jemoji
+  - jekyll-gist
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-mentions
   - jekyll-redirect-from
 
@@ -56,8 +64,3 @@ gems:
 sass:
   sass_dir: _sass
   style: :compressed
-
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole

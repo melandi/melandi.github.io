@@ -13,3 +13,20 @@
 footer {
   margin-bottom: 2rem;
 }
+
+.sidebar-item__links {
+  padding: 0.7rem 1.5rem;
+}
+
+.sidebar-item__link {
+  border: medium none;
+  font-size: 1.7em;
+  padding: 0 0.4em 0 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.sidebar-item__link:hover {
+  color: #000;
+  text-decoration: none;
+}
