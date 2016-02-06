@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Обо мне.. :hamster:
+title: Обо мне :hamster:
 ---
 
 **Доброго времени суток, друзья!**
