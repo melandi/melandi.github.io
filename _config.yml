@@ -63,4 +63,4 @@ gems:
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
